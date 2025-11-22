@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Use-Case Portal</h1>
+  <div class="grid">
+    <div class="card" *ngFor="let uc of useCases" (click)="openChat(uc)">
+      <h3>{{ uc.name }}</h3>
+      <p>{{ uc.description }}</p>
+    </div>
+  </div>
+</div>

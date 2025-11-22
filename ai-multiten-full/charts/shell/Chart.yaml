@@ -1,0 +1,4 @@
+apiVersion: v2
+name: shell
+version: 0.1.0
+description: Angular shell (host) chart (demo)

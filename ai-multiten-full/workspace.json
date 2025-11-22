@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "projects": {
+    "shell": {
+      "root": "apps/shell",
+      "sourceRoot": "apps/shell/src",
+      "projectType": "application"
+    },
+    "chat": {
+      "root": "apps/chat",
+      "sourceRoot": "apps/chat/src",
+      "projectType": "application"
+    }
+  }
+}

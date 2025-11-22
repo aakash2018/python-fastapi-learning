@@ -1,0 +1,42 @@
+{
+  "name": "shell",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "app",
+  "sourceRoot": "apps/shell/src",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "options": {
+        "outputPath": "dist/apps/shell",
+        "index": "apps/shell/src/index.html",
+        "browser": "apps/shell/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/shell/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          { "glob": "**/*", "input": "apps/shell/public" }
+        ],
+        "styles": ["apps/shell/src/styles.scss"]
+      },
+      "configurations": {
+        "production": { "outputHashing": "all" },
+        "development": { "optimization": false, "sourceMap": true }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "options": {
+        "buildTarget": "shell:build:development",
+        "port": 4200
+      },
+      "configurations": {
+        "production": { "buildTarget": "shell:build:production" },
+        "development": { "buildTarget": "shell:build:development" }
+      },
+      "defaultConfiguration": "development"
+    },
+    "lint": { "executor": "@nx/eslint:lint" }
+  }
+}

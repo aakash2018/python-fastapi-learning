@@ -1,0 +1,422 @@
+{
+  "apps/chat": {
+    "root": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "prefix": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.index": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.browser": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.polyfills": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.inlineStyleLanguage": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.styles": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.budgets": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.outputHashing": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.optimization": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.extractLicenses": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.sourceMap": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.port": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.executor": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.options": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.options.buildTarget": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.continuous": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.executor": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.buildTarget": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.staticFilePath": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.spa": [
+      "apps/chat/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "backend/chat": {
+    "root": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "prefix": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.index": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.browser": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.polyfills": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.inlineStyleLanguage": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.styles": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.budgets": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.outputHashing": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.optimization": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.extractLicenses": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.sourceMap": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.continuous": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.defaultConfiguration": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development.buildTarget": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.executor": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.options": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.extract-i18n.options.buildTarget": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.continuous": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.executor": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.buildTarget": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.staticFilePath": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.spa": [
+      "backend/chat/project.json",
+      "nx/core/project-json"
+    ]
+  }
+}

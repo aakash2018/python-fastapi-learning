@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx serve shell --configuration=development",
+    "startTime": "2025-11-22T15:14:26.513Z",
+    "endTime": "2025-11-22T15:16:08.124Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "shell:serve:development",
+      "target": "serve",
+      "projectName": "shell",
+      "hash": "7125696584992175142",
+      "startTime": "2025-11-22T15:14:26.523Z",
+      "endTime": "2025-11-22T15:16:08.123Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

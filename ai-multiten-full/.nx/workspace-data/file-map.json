@@ -1,0 +1,481 @@
+{
+  "version": "6.0",
+  "nxVersion": "22.1.1",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "chat": [
+        {
+          "file": "apps/chat/README.md",
+          "hash": "18156866065817918406"
+        },
+        {
+          "file": "apps/chat/eslint.config.mjs",
+          "hash": "6664338929523021364"
+        },
+        {
+          "file": "apps/chat/project.json",
+          "hash": "13715091365555317105"
+        },
+        {
+          "file": "apps/chat/public/favicon.ico",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/chat/src/app/app.component.html",
+          "hash": "9194779117313656693"
+        },
+        {
+          "file": "apps/chat/src/app/app.component.scss",
+          "hash": "3174294986776730382"
+        },
+        {
+          "file": "apps/chat/src/app/app.component.ts",
+          "hash": "10850305303149732257",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/chat/src/app/app.config.ts",
+          "hash": "8211625193005497694",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/chat/src/app/app.routes.ts",
+          "hash": "220697922556680526",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/chat/src/app/chat.component.html",
+          "hash": "17440545376191228686"
+        },
+        {
+          "file": "apps/chat/src/app/chat.component.scss",
+          "hash": "15011833664041757222"
+        },
+        {
+          "file": "apps/chat/src/app/chat.component.ts",
+          "hash": "1236023343739896562",
+          "deps": [
+            "npm:@angular/core",
+            [
+              "npm:highlight.js",
+              "dynamic"
+            ],
+            [
+              "npm:chart.js",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "apps/chat/src/app/chat.service.ts",
+          "hash": "14327218501849776227",
+          "deps": [
+            "npm:@angular/core",
+            [
+              "npm:marked",
+              "dynamic"
+            ],
+            [
+              "npm:dompurify",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "apps/chat/src/app/nx-welcome.component.ts",
+          "hash": "11138224175103924929"
+        },
+        {
+          "file": "apps/chat/src/index.html",
+          "hash": "2935706604255460333"
+        },
+        {
+          "file": "apps/chat/src/main.ts",
+          "hash": "6447586959514231134",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/chat/src/styles.scss",
+          "hash": "16908447658248824703"
+        },
+        {
+          "file": "apps/chat/tsconfig.app.json",
+          "hash": "8833312933533495753"
+        },
+        {
+          "file": "apps/chat/tsconfig.editor.json",
+          "hash": "15707135132483984953"
+        },
+        {
+          "file": "apps/chat/tsconfig.json",
+          "hash": "15707135132483984953"
+        },
+        {
+          "file": "apps/chat/webpack.config.js",
+          "hash": "17982920963317966097",
+          "deps": [
+            "npm:webpack"
+          ]
+        }
+      ],
+      "chat-backend-generated": [
+        {
+          "file": "backend/chat/eslint.config.mjs",
+          "hash": "15052851186193004871"
+        },
+        {
+          "file": "backend/chat/project.json",
+          "hash": "3908104146007796547"
+        },
+        {
+          "file": "backend/chat/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "backend/chat/src/app/app.component.html",
+          "hash": "11987652264972370457"
+        },
+        {
+          "file": "backend/chat/src/app/app.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "backend/chat/src/app/app.component.ts",
+          "hash": "17611513715031710268",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "backend/chat/src/app/app.config.ts",
+          "hash": "6137170128205633588",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "backend/chat/src/app/app.routes.ts",
+          "hash": "6185150965714414910",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "backend/chat/src/app/nx-welcome.component.ts",
+          "hash": "6012637162476239067",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "backend/chat/src/index.html",
+          "hash": "7320005594417090570"
+        },
+        {
+          "file": "backend/chat/src/main.ts",
+          "hash": "16635586463787978962",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "backend/chat/src/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "backend/chat/tsconfig.app.json",
+          "hash": "12107332524951518174"
+        },
+        {
+          "file": "backend/chat/tsconfig.editor.json",
+          "hash": "6582911127236084219"
+        },
+        {
+          "file": "backend/chat/tsconfig.json",
+          "hash": "18276584175622371060"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".gitignore",
+        "hash": "7931448543536047049"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "10375883247522981584"
+      },
+      {
+        "file": "README.md",
+        "hash": "512179168577061460"
+      },
+      {
+        "file": "ai-requirement.md",
+        "hash": "6642382457026293486"
+      },
+      {
+        "file": "apps/shell/README.md",
+        "hash": "6671339511508673899"
+      },
+      {
+        "file": "apps/shell/eslint.config.mjs",
+        "hash": "6664338929523021364"
+      },
+      {
+        "file": "apps/shell/public/favicon.ico",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "apps/shell/src/app/app.component.html",
+        "hash": "4601031280912495734"
+      },
+      {
+        "file": "apps/shell/src/app/app.component.scss",
+        "hash": "2630212697175448120"
+      },
+      {
+        "file": "apps/shell/src/app/app.component.ts",
+        "hash": "5519462454741055794"
+      },
+      {
+        "file": "apps/shell/src/app/app.config.ts",
+        "hash": "5892614791705855995"
+      },
+      {
+        "file": "apps/shell/src/app/app.routes.ts",
+        "hash": "14740869409152969855"
+      },
+      {
+        "file": "apps/shell/src/app/dashboard.component.html",
+        "hash": "16900520668077371506"
+      },
+      {
+        "file": "apps/shell/src/app/dashboard.component.scss",
+        "hash": "9099088305271313640"
+      },
+      {
+        "file": "apps/shell/src/app/dashboard.component.ts",
+        "hash": "3966010730664417728"
+      },
+      {
+        "file": "apps/shell/src/app/nx-welcome.component.ts",
+        "hash": "12173696252901632023"
+      },
+      {
+        "file": "apps/shell/src/index.html",
+        "hash": "860902346396325224"
+      },
+      {
+        "file": "apps/shell/src/main.ts",
+        "hash": "875041330523952236"
+      },
+      {
+        "file": "apps/shell/src/styles.scss",
+        "hash": "2917954890128038984"
+      },
+      {
+        "file": "apps/shell/tsconfig.app.json",
+        "hash": "6700229837538116952"
+      },
+      {
+        "file": "apps/shell/tsconfig.editor.json",
+        "hash": "17741664854101533543"
+      },
+      {
+        "file": "apps/shell/tsconfig.json",
+        "hash": "17741664854101533543"
+      },
+      {
+        "file": "apps/shell/webpack.config.js",
+        "hash": "12810619746312100877"
+      },
+      {
+        "file": "backend/.gitignore",
+        "hash": "8110596130395569411"
+      },
+      {
+        "file": "backend/.nx/nxw.js",
+        "hash": "11301648124127104610"
+      },
+      {
+        "file": "backend/.prettierignore",
+        "hash": "5407418692668764289"
+      },
+      {
+        "file": "backend/.prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "backend/Dockerfile",
+        "hash": "8443382917962918307"
+      },
+      {
+        "file": "backend/ai-multiten-full/.editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": "backend/ai-multiten-full/.gitignore",
+        "hash": "18435103667633526488"
+      },
+      {
+        "file": "backend/ai-multiten-full/README.md",
+        "hash": "10487633751651546063"
+      },
+      {
+        "file": "backend/ai-multiten-full/nx.json",
+        "hash": "7984885312398650396"
+      },
+      {
+        "file": "backend/ai-multiten-full/package-lock.json",
+        "hash": "1379196238080422665"
+      },
+      {
+        "file": "backend/ai-multiten-full/package.json",
+        "hash": "5463784456542384530"
+      },
+      {
+        "file": "backend/app/__init__.py",
+        "hash": "1191226258550037402"
+      },
+      {
+        "file": "backend/app/db.py",
+        "hash": "9518798978395225127"
+      },
+      {
+        "file": "backend/app/main.py",
+        "hash": "13945050325461033398"
+      },
+      {
+        "file": "backend/app/middleware.py",
+        "hash": "15045144716549707874"
+      },
+      {
+        "file": "backend/app/models.py",
+        "hash": "5703147267952875480"
+      },
+      {
+        "file": "backend/create_indexes.py",
+        "hash": "10759466204357222834"
+      },
+      {
+        "file": "backend/eslint.config.mjs",
+        "hash": "10770449096712831357"
+      },
+      {
+        "file": "backend/nx",
+        "hash": "8108031838021157773"
+      },
+      {
+        "file": "backend/nx.bat",
+        "hash": "16119536321561623970"
+      },
+      {
+        "file": "backend/nx.json",
+        "hash": "1002125794494138318"
+      },
+      {
+        "file": "backend/package-lock.json",
+        "hash": "14887606231431302350"
+      },
+      {
+        "file": "backend/package.json",
+        "hash": "1042360767007865081"
+      },
+      {
+        "file": "backend/requirements.txt",
+        "hash": "5200189969139096546"
+      },
+      {
+        "file": "backend/schemas/README.md",
+        "hash": "12218087761693898608"
+      },
+      {
+        "file": "backend/setup_venv.ps1",
+        "hash": "9737407141912415816"
+      },
+      {
+        "file": "backend/tsconfig.base.json",
+        "hash": "16936441711144470533"
+      },
+      {
+        "file": "charts/backend/Chart.yaml",
+        "hash": "11354868607327274568"
+      },
+      {
+        "file": "charts/backend/templates/deployment.yaml",
+        "hash": "8485955090052571421"
+      },
+      {
+        "file": "charts/backend/values.yaml",
+        "hash": "13083111466078396119"
+      },
+      {
+        "file": "charts/chat/Chart.yaml",
+        "hash": "13575471199283834712"
+      },
+      {
+        "file": "charts/ingress.yaml",
+        "hash": "11888304883577009764"
+      },
+      {
+        "file": "charts/mongo/Chart.yaml",
+        "hash": "12781026206376317692"
+      },
+      {
+        "file": "charts/mongo/templates/statefulset.yaml",
+        "hash": "8021304241519776015"
+      },
+      {
+        "file": "charts/mongo/values.yaml",
+        "hash": "5522906532829402482"
+      },
+      {
+        "file": "charts/shell/Chart.yaml",
+        "hash": "7454075349979986090"
+      },
+      {
+        "file": "charts/shell/values.yaml",
+        "hash": "327886847930943442"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "10033463381702268471"
+      },
+      {
+        "file": "nx.json",
+        "hash": "12286601842962087958"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "5815968206255302293"
+      },
+      {
+        "file": "package.json",
+        "hash": "15565448433263311746"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "8088009628446748821"
+      },
+      {
+        "file": "workspace.json",
+        "hash": "13187713915576437461"
+      }
+    ]
+  },
+  "externalNodesHash": "6923883523509212822"
+}

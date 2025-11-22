@@ -1,0 +1,4 @@
+apiVersion: v2
+name: chat
+version: 0.1.0
+description: Angular chat remote chart (demo)

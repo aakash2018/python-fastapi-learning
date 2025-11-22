@@ -1,0 +1,26 @@
+Daemon process terminated and closed the connection
+
+Messages from the log:
+[NX v22.1.1 Daemon Server] - 2025-11-22T14:38:54.513Z - Received raw message of length 32
+[NX v22.1.1 Daemon Server] - 2025-11-22T14:38:54.513Z - Received json message of type REQUEST_PROJECT_GRAPH
+[NX v22.1.1 Daemon Server] - 2025-11-22T14:38:54.514Z - [REQUEST]: Client Request for Project Graph Received
+[NX v22.1.1 Daemon Server] - 2025-11-22T14:38:54.679Z - Time taken for 'Load Nx Plugin: d:\fastapi_tutorial\ai-multiten-full\node_modules\nx\src\plugins\package-json' 582.5309000000001ms
+[NX v22.1.1 Daemon Server] - 2025-11-22T14:38:54.702Z - Time taken for 'Load Nx Plugin: d:\fastapi_tutorial\ai-multiten-full\node_modules\nx\src\plugins\js' 608.2178999999999ms
+[NX v22.1.1 Daemon Server] - 2025-11-22T14:38:54.709Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.1.1 Daemon Server] - 2025-11-22T14:38:54.709Z - [REQUEST]: 
+[NX v22.1.1 Daemon Server] - 2025-11-22T14:38:54.709Z - [REQUEST]: 
+[NX v22.1.1 Daemon Server] - 2025-11-22T14:38:54.713Z - Reusing in-memory cached project graph because no files changed.
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 0.6417999999999893
+[NX v22.1.1 Daemon Server] - 2025-11-22T14:38:54.721Z - Time taken for 'loadDefaultNxPlugins' 614.7213999999999ms
+Time for 'nx/core/package-json:createNodes' 1.807200000000023
+Time for 'nx/core/project-json:createNodes' 2.1445999999999685
+[NX v22.1.1 Daemon Server] - 2025-11-22T14:38:54.760Z - Time taken for 'build-project-configs' 20.97699999999986ms
+[NX v22.1.1 Daemon Server] - 2025-11-22T14:38:54.791Z - [WATCHER]: Processing file changes in outputs
+[NX v22.1.1 Daemon Server] - 2025-11-22T14:38:54.794Z - Closed a connection. Number of open connections: 0
+[NX v22.1.1 Daemon Server] - 2025-11-22T14:38:54.795Z - [WATCHER]: Stopping the watcher for d:\fastapi_tutorial\ai-multiten-full (sources)
+[NX v22.1.1 Daemon Server] - 2025-11-22T14:38:54.795Z - [WATCHER]: Stopping the watcher for d:\fastapi_tutorial\ai-multiten-full (outputs)
+[NX v22.1.1 Daemon Server] - 2025-11-22T14:38:54.796Z - Server stopped because: "LOCK_FILES_CHANGED"
+
+
+
+More information: d:\fastapi_tutorial\ai-multiten-full\.nx\workspace-data\d\daemon.log

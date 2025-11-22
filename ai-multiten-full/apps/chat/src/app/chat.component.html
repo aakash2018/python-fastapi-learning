@@ -1,0 +1,16 @@
+<div class="chat-shell">
+  <div class="messages">
+    <ng-container *ngFor="let m of messages; let i = index">
+      <div class="msg" [class.user]="m.role==='user'">
+        <div class="role">{{ m.role }}</div>
+        <div class="content" [innerHTML]="m.rendered || m.content"></div>
+        <canvas *ngIf="m.type==='chart'" class="chart-canvas" #chartCanvas [attr.data-msg-index]="i"></canvas>
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="composer">
+    <input [(ngModel)]="input" (keydown.enter)="send()" placeholder="Type a prompt and press Enter" />
+    <button (click)="send()">Send</button>
+  </div>
+</div>
