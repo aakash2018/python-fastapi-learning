@@ -66,8 +66,46 @@ follow domain draggon design also called feature based strucutre.
 ## --init_.py create package our folder in angular
 
 
+## SQLAlchemy synchronous install command
+pip install SQLAlchemy
 
 
+## import sqlalchemy 
+from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+ 
+## install alembic
+pip install alembic
+
+alembic init alembic
+
+## config file
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+db_path = os.path.join(BASE_DIR, "sqlite.db")
+
+DATABASE_URL = f"sqlite:///{db_path}"
+
+engine = create_engine(DATABASE_URL, echo=True)
+
+SessionLocal = sessionmaker(
+    bind=engine, expire_on_commit=False, autocommit=False, autoflush=False
+)
+
+## create a migration script 
+alembic revision --autogenerate -m "create users table"
+
+## migration script
+alembic upgrade head
+
+## see requirements.txt
+ pip freeze > requirements.txt 
 
 
 
