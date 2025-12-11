@@ -81,6 +81,9 @@ pip install alembic
 
 alembic init alembic
 
+## async alembic
+ alembic init  -t async alembic
+
 ## config file
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
@@ -107,7 +110,14 @@ alembic upgrade head
 ## see requirements.txt
  pip freeze > requirements.txt 
 
+## async sqlalchemy install command
+pip install sqlalchemy[asyncio]
 
+## import sqlalchemy 
+ import sqlalchemy
+
+## sqlit commands
+ pip install aiosqlite
 
 
 
