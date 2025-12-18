@@ -120,4 +120,7 @@ pip install sqlalchemy[asyncio]
  pip install aiosqlite
 
 
+## pydantic link
+https://docs.pydantic.dev/latest/migration/#using-pydantic-v1-features-in-a-v1v2-environment
+
 
