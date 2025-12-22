@@ -123,4 +123,8 @@ pip install sqlalchemy[asyncio]
 ## pydantic link
 https://docs.pydantic.dev/latest/migration/#using-pydantic-v1-features-in-a-v1v2-environment
 
-
+-----------------------------------------------------------------------
+## fast api setup command after creating virtual environment
+pip install "fastapi[standard]"  uvicorn loguru python-dotenv httpx
+uvicorn main:history_app --port 8001 --reload
+uvicorn main:user_app --port 8002 --reload
