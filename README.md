@@ -129,3 +129,17 @@ pip install "fastapi[standard]"  uvicorn loguru python-dotenv httpx
 uvicorn main:history_app --port 8001 --reload
 uvicorn main:user_app --port 8002 --reload
 uvicorn gateway.app.main:gateway_app --reload --port 8000
+
+
+--------------------------------------------------------------------------------
+pip install "fastapi[standard]" sqlalchemy[asyncio] aiosqlite alembic python-decouple  python-jose[cryptography] passlib[bcrypt] httpx[all]  cryptography 
+
+pip freeze > requirements.txt
+
+fastapi dev main.py
+
+alembic init -t async alembic
+
+alembic revision --autogenerate -m "create users table"
+
+alembic upgrade head
