@@ -10,7 +10,7 @@ class UserBase(BaseModel):
 
 
 class UserCreate(UserBase):
-    password: constr(min_length=8, max_length=72)
+    password: str
 
 
 class UserUpdate(UserBase):
@@ -29,3 +29,8 @@ class User(UserBase):
 
     class Config:
         from_attributes = True
+
+
+class UserLogin(BaseModel):
+    email: EmailStr
+    password: str
