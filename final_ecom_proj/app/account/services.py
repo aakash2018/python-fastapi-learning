@@ -9,6 +9,8 @@ from app.account.schemas import (
 from app.account.utils import (
     hash_password,
     verify_password,
+    create_email_verification_token,
+    verify_email_token_and_get_user_id,
 )
 
 
@@ -36,3 +38,28 @@ async def authenticate_user(session: AsyncSession, user_login: UserLogin):
         return None
 
     return user
+
+
+async def email_verification_send(user: User):
+    token = create_email_verification_token(user.id)
+    link = f"http://localhost:8000/verify-email?token={token}"
+    print(f"Verify your email link: {link}")
+    return {"msg": "Verification email sent"}
+
+
+async def verify_email_token(session: AsyncSession, token: str):
+    user_id = verify_email_token_and_get_user_id(token, "verify_email")
+    if not user_id:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid token"
+        )
+    stmt = select(User).where(User.id == user_id)
+    result = await session.scalars(stmt)
+    user = result.first()
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="User not found"
+        )
+    user.is_verified = True
+    await session.commit()
+    return {"msg": "Email verified successfully"}
