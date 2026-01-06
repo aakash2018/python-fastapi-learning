@@ -5,12 +5,17 @@ from fastapi import HTTPException, status
 from app.account.schemas import (
     UserCreate,
     UserLogin,
+    PasswordChangeRequest,
+    PasswordResetEmailRequest,
+    PasswordResetRequest,
 )
 from app.account.utils import (
     hash_password,
     verify_password,
     create_email_verification_token,
     verify_email_token_and_get_user_id,
+    get_user_by_email,
+    create_password_reset_token,
 )
 
 
@@ -63,3 +68,51 @@ async def verify_email_token(session: AsyncSession, token: str):
     user.is_verified = True
     await session.commit()
     return {"msg": "Email verified successfully"}
+
+
+async def change_password(
+    session: AsyncSession, user: User, data: PasswordChangeRequest
+):
+    if not verify_password(data.old_password, user.hashed_password):
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED, detail="Old password is incorrect"
+        )
+    user.hashed_password = hash_password(data.new_password)
+    session.add(user)
+    await session.commit()
+    return user
+
+
+async def password_reset_email_send(
+    session: AsyncSession, data: PasswordResetEmailRequest
+):
+    user = await get_user_by_email(session, data.email)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="User not found"
+        )
+    token = create_password_reset_token(user.id)
+    link = f"http://localhost:8000/reset-password?token={token}"
+    print(f"Reset password link: {link}")
+    return {"msg": "Password reset email sent"}
+
+
+async def verify_password_reset_token(
+    session: AsyncSession, data: PasswordResetRequest
+):
+    user_id = verify_email_token_and_get_user_id(data.token, "password_reset")
+    if not user_id:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST, detail="Invalid token"
+        )
+    stmt = select(User).where(User.id == user_id)
+    result = await session.scalars(stmt)
+    user = result.first()
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="User not found"
+        )
+    user.hashed_password = hash_password(data.new_password)
+    session.add(user)
+    await session.commit()
+    return {"msg": "Password reset successfully"}
