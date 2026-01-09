@@ -18,7 +18,7 @@ from app.account.services import (
     password_reset_email_send,
     verify_password_reset_token,
 )
-from app.account.utils import create_tokens, verify_refresh_token
+from app.account.utils import create_tokens, verify_refresh_token, revoke_refresh_token
 from app.account.models import User
 from app.account.deps import get_current_user, require_admin
 
