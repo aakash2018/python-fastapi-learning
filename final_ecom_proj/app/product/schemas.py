@@ -12,3 +12,24 @@ class CategoryCreate(CategoryBase):
 class CategoryOut(CategoryBase):
     id: int
     name: str
+
+
+class ProductBase(BaseModel):
+    title: str
+    description: str | None = None
+    price: float = Field(gt=0)
+    stock_quantity: int = Field(gt=0)
+
+
+class ProductCreate(ProductBase):
+    category_ids: list[int] | None = None
+
+
+class ProductOut(ProductBase):
+    id: int
+    title: str
+    description: str | None = None
+    price: float
+    categories: list[CategoryOut] = []
+    image_url: str | None = None
+    model_config = {"from_attributes": True}
